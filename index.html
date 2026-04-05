@@ -2,41 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Luxury Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <h1>Your Name</h1>
-        <h2>Aspiring Cybersecurity Analyst</h2>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <h2>Aspiring Cybersecurity Analyst</h2>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <!-- About Me Section -->
-        <section class="about">
+        <!-- About Me -->
+        <section class="about" id="about">
             <h3>About Me</h3>
-            <p>Hello! I am a student aspiring to become a cybersecurity analyst. This portfolio showcases my beginner projects and skills.</p>
+            <p>Hello! I am a beginner aspiring to become a cybersecurity analyst. This portfolio shows my projects, skills, and growth journey.</p>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects">
+        <!-- Projects -->
+        <section class="projects" id="projects">
             <h3>Portfolio Projects</h3>
 
             <div class="project-card">
                 <h4>🖥️ Simple Python Calculator</h4>
-                <p>A small program to perform basic calculations, practicing Python fundamentals and problem-solving.</p>
+                <p>A small program performing basic calculations using Python.</p>
                 <div class="skills">
                     <span class="skill">Python</span>
                     <span class="skill">Problem-Solving</span>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card interactive">
                 <h4>🎮 Python Tic-Tac-Toe</h4>
-                <p>A text-based two-player Tic-Tac-Toe game implemented in Python, practicing loops, conditionals, and game logic.</p>
+                <p>Play the Tic-Tac-Toe game directly below!</p>
+                <div class="tic-tac-toe" id="tic-tac-toe">
+                    <div class="board">
+                        <div class="cell" data-index="0"></div>
+                        <div class="cell" data-index="1"></div>
+                        <div class="cell" data-index="2"></div>
+                        <div class="cell" data-index="3"></div>
+                        <div class="cell" data-index="4"></div>
+                        <div class="cell" data-index="5"></div>
+                        <div class="cell" data-index="6"></div>
+                        <div class="cell" data-index="7"></div>
+                        <div class="cell" data-index="8"></div>
+                    </div>
+                    <button id="reset-btn">Restart Game</button>
+                    <p id="winner"></p>
+                </div>
                 <div class="skills">
                     <span class="skill">Python</span>
                     <span class="skill">Logic & Loops</span>
@@ -44,8 +65,8 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="skills-section">
+        <!-- Skills -->
+        <section class="skills-section" id="skills">
             <h3>Skills</h3>
             <div class="skills">
                 <span class="skill">🐍 Python</span>
@@ -56,12 +77,20 @@
                 <span class="skill">📽️ Microsoft PowerPoint</span>
             </div>
         </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h3>Contact</h3>
+            <p>📧 Email: your.email@example.com</p>
+            <p>💼 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>📧 Contact: your.email@example.com | 💼 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>© 2026 Your Name | Interactive Portfolio</p>
     </footer>
 
+    <script src="tic-tac-toe.js"></script>
 </body>
 </html>
