@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="header">
         <h1>Your Name</h1>
         <h2>Aspiring Cybersecurity Analyst</h2>
     </header>
 
     <main>
-        <p>Hello! I am a student interested in cybersecurity and technology. This portfolio highlights some of my beginner projects and skills.</p>
+        <section class="about">
+            <h3>About Me</h3>
+            <p>Hello! I am a student aspiring to become a cybersecurity analyst. This portfolio showcases my projects, skills, and growth as a beginner in tech.</p>
+        </section>
 
-        <h3>Portfolio Projects</h3>
+        <section class="projects">
+            <h3>Portfolio Projects</h3>
 
-        <div class="project">
-            <h4>🖥️ Simple Python Calculator</h4>
-            <p>A small program to perform basic calculations. This project helped me practice Python fundamentals and problem-solving.</p>
-            <p><strong>Skills:</strong> Python, Problem-Solving</p>
-        </div>
+            <div class="project-card">
+                <h4>🖥️ Simple Python Calculator</h4>
+                <p>A small program to perform basic calculations, practicing Python fundamentals and problem-solving.</p>
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Problem-Solving</span>
+                </div>
+            </div>
 
-        <div class="project">
-            <h4>📊 Data Analysis Lab</h4>
-            <p>Analyzed a dataset from a class assignment using spreadsheets. This project involved creating charts and interpreting basic data trends.</p>
-            <p><strong>Skills:</strong> Excel / Google Sheets, Charts, Basic Statistics</p>
-        </div>
+            <div class="project-card">
+                <h4>📊 Data Analysis Lab</h4>
+                <p>Analyzed a dataset from a class assignment using spreadsheets, charts, and basic statistics.</p>
+                <div class="skills">
+                    <span class="skill">Excel</span>
+                    <span class="skill">Charts</span>
+                    <span class="skill">Statistics</span>
+                </div>
+            </div>
+        </section>
 
-        <h3>Skills</h3>
-        <ul>
-            <li>🐍 Python</li>
-            <li>🛠️ Git / GitHub</li>
-            <li>💻 HTML / CSS</li>
-            <li>📊 Data Analysis</li>
-        </ul>
+        <section class="skills-section">
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill">🐍 Python</span>
+                <span class="skill">🛠️ Git / GitHub</span>
+                <span class="skill">💻 HTML / CSS</span>
+                <span class="skill">📊 Data Analysis</span>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="footer">
-        <p>📧 Contact me: your.email@example.com | 💼 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>📧 Contact: your.email@example.com | 💼 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
     </footer>
 
 </body>
